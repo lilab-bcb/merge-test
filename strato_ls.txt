@@ -1,5 +1,0 @@
-gsutil ls gs://gred-cumulus-output/tests/starsolo_test/pbmc_1k_v3_fastqs
-
-aws s3api list-objects --bucket "gred-cumulus-ref" --prefix "examples/pbmc_1k_v3_fastqs" --output text --query "Contents[].{Key: Key}"
-
-ls -lp /Users/yangy197/Documents/projects/star_solo/pbmc_1k_v3_fastqs | awk '{$1=$2=$3=$4=$5=$6=$7=$8=""; print $0}' | sed 's/^[ \t]*//'
